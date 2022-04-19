@@ -1,0 +1,23 @@
+﻿@model IEnumerable<CheckBoxList.Models.city>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm())
+{
+
+
+    foreach (var item in Model)
+    {
+        @Html.HiddenFor(x => item.id)
+        @Html.HiddenFor(x => item.Name)
+
+        @Html.CheckBoxFor(x => item.isselected)
+        @Html.DisplayFor(x => item.Name)
+    }
+    <br />
+    <br />
+    <input type="submit" value="Submit" />
+}
+

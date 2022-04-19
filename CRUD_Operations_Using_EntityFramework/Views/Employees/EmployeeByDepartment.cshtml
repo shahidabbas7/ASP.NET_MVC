@@ -1,0 +1,32 @@
+﻿@model IEnumerable<CRUD_Operations_Using_EntityFramework.Models.DepartmentTotal>
+    @using CRUD_Operations_Using_EntityFramework.Models
+@{
+    ViewBag.Title = "EmployeeByDepartment";
+}
+<div style="font-family:Arial">
+    <h2>EmployeeByDepartment</h2>
+    <table border="1">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.total)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.total)
+                </td>
+            </tr>
+
+        }
+
+    </table>
+</div>

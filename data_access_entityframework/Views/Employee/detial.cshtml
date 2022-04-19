@@ -1,0 +1,43 @@
+﻿@model data_access_entityframework.Models.Employee
+@using data_access_entityframework.Models
+@{
+    ViewBag.Title = "detial";
+}
+
+<h2>employee detial</h2>
+<table>
+    <tr>
+        <td>
+            Employee Id:
+        </td>
+        <td>
+            @Model.employeeid
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Employee name:
+        </td>
+        <td>
+            @Model.name
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Employee gender:
+        </td>
+        <td>
+            @Model.gender
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Employee city:
+        </td>
+        <td>
+            @Model.city
+        </td>
+    </tr>
+</table>
+@Html.ActionLink("Back to List", "Index", new {deptid=@Model.Departmentid})
+

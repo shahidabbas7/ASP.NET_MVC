@@ -1,0 +1,15 @@
+﻿
+Home->Index->OnActionExecuting01/12/2021 9:52:17 pm
+
+Home->Index->OnActionExecuted01/12/2021 9:52:17 pm
+
+Home->Index->exception01/12/2021 9:52:18 pm
+--------------------------------------------------------------
+Home->Index->OnActionExecuting01/12/2021 9:52:52 pm
+
+Home->Index->OnActionExecuted01/12/2021 9:52:52 pm
+
+Home->Index->OnResultExecuting01/12/2021 9:52:52 pm
+
+Home->Index->OnResultExecuted01/12/2021 9:52:54 pm
+--------------------------------------------------------------

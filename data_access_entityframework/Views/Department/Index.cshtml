@@ -1,0 +1,15 @@
+﻿@model IEnumerable<data_access_entityframework.Models.Department>
+@using data_access_entityframework.Models
+@{
+    ViewBag.Title = "Department List";
+}
+<div style="font-family:Arial">
+    <h2>Department List</h2>
+    @foreach(Department department in @Model)
+            {
+        
+             @Html.ActionLink(department.name,"Index","Employee",new {deptid=department.id},null)<br />
+            }
+</div>
+
+

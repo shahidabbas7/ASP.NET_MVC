@@ -1,0 +1,78 @@
+﻿@using PagedList
+@using PagedList.Mvc
+@model PagedList<Searching_in_MVC.Models.Employee>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<p>
+    @using (Html.BeginForm("index", "Employees",FormMethod.Get))
+    {
+    <b>Search by:</b>@Html.RadioButton("searchby", "Name", true)
+       @:Name
+    @Html.RadioButton("searchby", "Gender") @:Gender
+    <br />
+    @Html.TextBox("search")
+    <input type="submit" value="Search"/>
+    }
+</p>
+<table class="table" border="1">
+    <tr>
+        <th>
+            @Html.ActionLink("Name","Index",new {sortby=ViewBag.sortname })
+        </th>
+        <th>
+            @Html.ActionLink("Gender", "Index", new { sortby = ViewBag.gendersort })
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().city)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Departmentid)
+        </th>
+        <th>
+            Action
+        </th>
+    </tr>
+@if(Model.Count()==0)
+            {
+                <tr>
+                    <td colspan="4">
+                        no matching result found
+                    </td>
+                </tr>
+            }
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.city)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Departmentid)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.employeeid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.employeeid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.employeeid })
+        </td>
+    </tr>
+}
+
+</table>
+@Html.PagedListPager(@Model, page => Url.Action("index" ,new
+{
+    page,
+    searchby=Request.QueryString["searchby"],search=Request.QueryString["search"],sortby=Request.QueryString["sortby"]
+}),new PagedListRenderOptions {DisplayPageCountAndCurrentLocation=true,DisplayItemSliceAndTotal=true })

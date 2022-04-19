@@ -1,0 +1,9 @@
+E:\ASP .NET CODE\testdb\bin\Debug\testdb.dacpac
+E:\ASP .NET CODE\testdb\bin\Debug\testdb.dll
+E:\ASP .NET CODE\testdb\bin\Debug\testdb.pdb
+E:\ASP .NET CODE\testdb\obj\Debug\Model.xml
+E:\ASP .NET CODE\testdb\obj\Debug\refactor.xml
+E:\ASP .NET CODE\testdb\obj\Debug\postdeploy.sql
+E:\ASP .NET CODE\testdb\obj\Debug\predeploy.sql
+E:\ASP .NET CODE\testdb\obj\Debug\testdb.dll
+E:\ASP .NET CODE\testdb\obj\Debug\testdb.pdb

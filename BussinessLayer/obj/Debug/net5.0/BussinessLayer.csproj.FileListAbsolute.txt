@@ -1,0 +1,15 @@
+E:\ASP .NET CODE\BussinessLayer\bin\Debug\net5.0\BussinessLayer.deps.json
+E:\ASP .NET CODE\BussinessLayer\bin\Debug\net5.0\BussinessLayer.runtimeconfig.json
+E:\ASP .NET CODE\BussinessLayer\bin\Debug\net5.0\BussinessLayer.runtimeconfig.dev.json
+E:\ASP .NET CODE\BussinessLayer\bin\Debug\net5.0\BussinessLayer.dll
+E:\ASP .NET CODE\BussinessLayer\bin\Debug\net5.0\ref\BussinessLayer.dll
+E:\ASP .NET CODE\BussinessLayer\bin\Debug\net5.0\BussinessLayer.pdb
+E:\ASP .NET CODE\BussinessLayer\obj\Debug\net5.0\BussinessLayer.csproj.AssemblyReference.cache
+E:\ASP .NET CODE\BussinessLayer\obj\Debug\net5.0\BussinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\ASP .NET CODE\BussinessLayer\obj\Debug\net5.0\BussinessLayer.AssemblyInfoInputs.cache
+E:\ASP .NET CODE\BussinessLayer\obj\Debug\net5.0\BussinessLayer.AssemblyInfo.cs
+E:\ASP .NET CODE\BussinessLayer\obj\Debug\net5.0\BussinessLayer.csproj.CoreCompileInputs.cache
+E:\ASP .NET CODE\BussinessLayer\obj\Debug\net5.0\BussinessLayer.dll
+E:\ASP .NET CODE\BussinessLayer\obj\Debug\net5.0\ref\BussinessLayer.dll
+E:\ASP .NET CODE\BussinessLayer\obj\Debug\net5.0\BussinessLayer.pdb
+E:\ASP .NET CODE\BussinessLayer\obj\Debug\net5.0\BussinessLayer.genruntimeconfig.cache

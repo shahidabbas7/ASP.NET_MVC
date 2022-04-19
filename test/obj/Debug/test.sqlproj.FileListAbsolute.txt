@@ -1,0 +1,10 @@
+E:\ASP .NET CODE\test\bin\Debug\test.dacpac
+E:\ASP .NET CODE\test\bin\Debug\test.dll
+E:\ASP .NET CODE\test\bin\Debug\test.pdb
+E:\ASP .NET CODE\test\obj\Debug\test.sqlproj.AssemblyReference.cache
+E:\ASP .NET CODE\test\obj\Debug\test.dll
+E:\ASP .NET CODE\test\obj\Debug\test.pdb
+E:\ASP .NET CODE\test\obj\Debug\Model.xml
+E:\ASP .NET CODE\test\obj\Debug\refactor.xml
+E:\ASP .NET CODE\test\obj\Debug\postdeploy.sql
+E:\ASP .NET CODE\test\obj\Debug\predeploy.sql

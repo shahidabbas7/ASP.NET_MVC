@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Layout_in_MVC.Models.Employee>
+
+@{
+    ViewBag.title = "Employee List";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @Html.ActionLink("Create New", "Create")
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.city)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Departmentid)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.city)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Departmentid)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.employeeid })|
+                    @Html.ActionLink("Details", "Details", new { id = item.employeeid })|
+                    @Html.ActionLink("Delete", "Delete", new { id = item.employeeid })
+                </td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>

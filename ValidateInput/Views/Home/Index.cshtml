@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@using (Html.BeginForm("index", "Home"))
+{
+<b>Comments</b>
+@Html.TextArea("comments")
+<input type="submit" value="Submit" />
+}

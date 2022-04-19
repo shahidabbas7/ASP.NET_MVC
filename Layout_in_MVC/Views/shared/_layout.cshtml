@@ -1,0 +1,31 @@
+﻿
+<html>
+<head>
+    <title>@ViewBag.title</title>
+</head>
+<body>
+    <table border="1" style="width:2000px;font-family:Arial">
+        <tr>
+            <td colspan="2" style="text-align:center;background-color:khaki;color:white">Employee Portal</td>
+        </tr>
+        <tr>
+            <td style="width:200px;background-color:khaki;color:white">
+                @if (IsSectionDefined("menu"))
+                {
+                    @RenderSection("menu", false)
+                }
+                else
+                {
+                    @Html.ActionLink("Employee list", "index")
+                }
+
+
+            </td>
+            <td style="width:1800px;">@RenderBody()</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center;background-color:khaki;color:white">with copyright 2021</td>
+        </tr>
+    </table>
+</body>
+</html>

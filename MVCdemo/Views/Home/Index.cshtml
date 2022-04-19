@@ -1,0 +1,60 @@
+﻿@model IEnumerable<EmployeeBussinesLayer.Employee>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+<div style="font-family:Arial">
+    <h2>Index</h2>
+
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table" border="1">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.city)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Departmentid)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            using (Html.BeginForm("Delete", "Home", new { id = item.employeeid }))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.gender)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.city)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Departmentid)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.employeeid }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.employeeid }) |
+
+                        <input type="submit" value="Delete" onclick="return confirm('are you sure you want to delete @item.name')" />
+
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>
+</div>

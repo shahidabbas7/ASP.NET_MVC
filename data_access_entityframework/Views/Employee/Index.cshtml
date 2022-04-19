@@ -1,0 +1,20 @@
+﻿@model IEnumerable<data_access_entityframework.Models.Employee>
+@using data_access_entityframework.Models
+
+@{
+    ViewBag.Title = "Employee list";
+}
+
+<div style="font-family:Arial">
+    <h2>Employee list</h2>
+    <ul>
+        @foreach (Employee employee in @Model)
+        {
+         <li>
+             @Html.ActionLink(employee.name,"detial", new {id=employee.employeeid})
+         </li>
+        }
+    </ul>
+          @Html.ActionLink("Back to Department List","Index","Department")
+</div>
+

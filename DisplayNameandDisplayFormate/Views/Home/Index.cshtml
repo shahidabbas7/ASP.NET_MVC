@@ -1,0 +1,8 @@
+﻿@model IEnumerable<DisplayNameandDisplayFormate.Models.tblEmployee>
+@foreach (var item in Model)
+{
+@Html.Partial("_employee", item)
+    { Html.RenderPartial("_employee", item);}//render partial is better in performance 
+    //becuase it it render the view directly to output stream we use partial in such
+    //cases when we want to want to store viewe in variable and then change it
+}

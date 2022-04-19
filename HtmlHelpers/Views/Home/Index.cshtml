@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>HTML Helpers</h2>
+@*@Html.Label("firstname", "FirstName")
+@Html.TextBox("FirstName", "john", new { @class = "abcv", @readonly = "true" })
+@Html.Label("firstname", "Password")
+@Html.Password("password")*@
+@*@Html.Label("Department","Department")
+@Html.DropDownList("name",new List<SelectListItem> { new SelectListItem {Text="IT",Value="1" },
+new SelectListItem{Text="HR",Value="2"},
+new SelectListItem{Text="Payroll",Value="3"}
+},"-Select Department-")*@
+@Html.TextBox("companyname", (string)ViewBag.companyname)
+@Html.DropDownList("Departments", "-Select Department-")
+
+

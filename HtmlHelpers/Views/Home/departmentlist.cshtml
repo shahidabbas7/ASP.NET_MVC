@@ -1,0 +1,19 @@
+﻿@model HtmlHelpers.Models.companyrb
+@{
+    ViewBag.Title = "departmentlist";
+}
+
+<h2>departmentlist</h2>
+@using (Html.BeginForm())
+{
+    foreach (var department in Model.departments)
+    {
+        @Html.RadioButtonFor(x => x.selectedDepartment, department.id,
+       (department.isselected.HasValue&&department.isselected.Value)?new {@checked="checked"}:null
+       )@department.Name
+    }
+    <br />
+    <br />
+    <input type="submit" value="Submit"/>
+}
+

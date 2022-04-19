@@ -1,0 +1,37 @@
+﻿@model DisplayNameandDisplayFormate.Models.tblEmployee
+<table style="font-family:Arial;border:1px solid black;width:300px">
+    <tr>
+        <td>
+            @Html.Raw(@Html.image(Model.photo, Model.alternate))
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        Age:
+                    </td>
+                    <td>
+                        @Model.Age
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender:
+                    </td>
+                    <td>
+                        @Model.Gender
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Salary:
+                    </td>
+                    <td>
+                        @Model.Salary
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+</table>

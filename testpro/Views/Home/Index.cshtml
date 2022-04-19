@@ -1,0 +1,13 @@
+﻿@model IEnumerable< testpro.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@foreach(var items in @Model)
+{
+    @items.name
+
+}
+

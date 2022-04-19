@@ -1,0 +1,12 @@
+E:\ASP .NET CODE\Bussiness_Layer_\bin\Debug\Bussiness_Layer_.dll
+E:\ASP .NET CODE\Bussiness_Layer_\bin\Debug\Bussiness_Layer_.pdb
+E:\ASP .NET CODE\Bussiness_Layer_\obj\Debug\Bussiness_Layer_.csproj.AssemblyReference.cache
+E:\ASP .NET CODE\Bussiness_Layer_\obj\Debug\Bussiness_Layer_.csproj.CoreCompileInputs.cache
+E:\ASP .NET CODE\Bussiness_Layer_\obj\Debug\Bussiness_Layer_.dll
+E:\ASP .NET CODE\Bussiness_Layer_\obj\Debug\Bussiness_Layer_.pdb
+E:\ASP .NET CODE\Bussiness_Layer_\bin\Debug\Bussiness_Layer_.dll.config
+E:\ASP .NET CODE\Bussiness_Layer_\bin\Debug\EntityFramework.dll
+E:\ASP .NET CODE\Bussiness_Layer_\bin\Debug\EntityFramework.SqlServer.dll
+E:\ASP .NET CODE\Bussiness_Layer_\bin\Debug\EntityFramework.xml
+E:\ASP .NET CODE\Bussiness_Layer_\bin\Debug\EntityFramework.SqlServer.xml
+E:\ASP .NET CODE\Bussiness_Layer_\obj\Debug\Bussiness_Layer_.csproj.CopyComplete

@@ -1,0 +1,21 @@
+﻿@model DisplayNameandDisplayFormate.Models.tblEmployee
+<link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-ui-1.13.0.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<link href="~/Content/Site.css" rel="stylesheet" />
+<script type="text/javascript">
+    $(function () {
+        $("input:text.date").datepicker({ dateFormat: "dd/MM/yyyy" });
+    });
+</script>
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <input type="submit" value="Save" class="btn btn-default" />
+
+
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
